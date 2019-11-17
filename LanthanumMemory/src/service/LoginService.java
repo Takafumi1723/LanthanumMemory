@@ -1,9 +1,19 @@
 package service;
 
+import model.User;
+
 public class LoginService {
 
-	public boolean excuteLogin(String userName, String password)
+	/**
+	 * ログインの認証処理
+	 */
+	public boolean executeLogin(User user)
 	{
-		return true;
+		if(user.getUserName().equals("test") && user.getPass().equals("1234"))
+		{
+			return true;
+		}
+		return false;
 	}
+
 }

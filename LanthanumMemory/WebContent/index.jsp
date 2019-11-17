@@ -4,32 +4,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ログイン</title>
+<link rel="stylesheet" href="./index.css">
+<title>LanthanumMemory Login</title>
 </head>
 <body>
-  <h1>ログイン</h1>
+  <h1>LanthanumMemory</h1>
   <hr>
   <div align="center">
     <table border="0">
       <form action="/LanthanumMemory/Login" method="POST">
       <tr>
-        <th>
-          ユーザID
-        </th>
         <td>
-          <input type="text" id="user_id" name="user_id">
+          <input type="text" id="user_id" name="user_id" placeholder="Username">
         </td>
       </tr>
       <tr>
-        <th>
-          パスワード
-        </th>
         <td>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" placeholder="Password">
         </td>
       </tr>
         <td>
-          <input type="submit" value="ログイン">
+          <input type="submit" id="loginBtn" value="Login">
         </td>
       </form>
     </table>
