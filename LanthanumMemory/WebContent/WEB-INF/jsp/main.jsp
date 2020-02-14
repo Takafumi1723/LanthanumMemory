@@ -1,15 +1,22 @@
 <%@page import="model.User"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <% User user = (User)session.getAttribute("loginUser"); %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>メイン画面</title>
-</head>
-<body>
-<p>Welcome To LanthanumMemory , <%= user.getUserName() %></p>
+  <head>
+    <link rel="stylesheet" href="./main.css">
+    <title>LanthanumMemory</title>
+  </head>
+  <body>
+    <div>
+      <p id="loginMessage">Welcome To LanthanumMemory , <%= user.getUserName() %></p>
+    </div>
+    <div class="menuTable">
+      <div class="menu"><input type="button" value="Photo"></div>
+      <div class="menu"><input type="button" value="Map"></div>
+      <div class="menu"><input type="button" value="Info"></div>
+    </div>
+
 
 
 </body>

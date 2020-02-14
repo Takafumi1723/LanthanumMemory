@@ -1,9 +1,9 @@
 html{
-	background-color: black;
+	background-color: #87cefa;
 }
 body>h1{
 	text-align: center;
-	color: aqua;
+	color: #0000cd;
 }
 
 #user_id{
