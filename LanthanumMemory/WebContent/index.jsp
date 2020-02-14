@@ -25,8 +25,15 @@
       </tr>
         <td>
           <input type="submit" id="loginBtn" value="ログイン">
-
         </td>
+        <form action="/LanthanumMemory/account">
+          <tr>
+            <td>
+             <a href="/WebContent/WEB-INF/jsp/createAccount.jsp">アカウント登録</a>
+             <input type="button" id="create_account" value="アカウント新規作成">
+            </td>
+          </tr>
+        </form>
       </form>
     </table>
   </div>
