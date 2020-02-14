@@ -1,0 +1,15 @@
+html{
+  background-color:#fffacd;
+  font-family: fantasy;
+}
+
+#loginMessage{
+  color:#3cb371;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.menu>div{
+  margin-top: 20px;
+}
