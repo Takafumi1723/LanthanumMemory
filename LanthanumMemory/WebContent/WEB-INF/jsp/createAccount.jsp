@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>アカウント新規作成</title>
 </head>
-<body>
+<body>createAccount.jsp
   
 </body>
 </html>
