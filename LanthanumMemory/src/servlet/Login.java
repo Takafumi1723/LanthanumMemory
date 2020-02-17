@@ -34,7 +34,12 @@ public class Login extends HttpServlet {
 		//ユーザ名とパスワードの認証
 		User user = new User(userName, pass);
 		LoginService ls = new LoginService();
-		boolean loginResult = ls.executeLogin(user);
+		boolean loginResult = false;
+		try {
+			loginResult = ls.executeLogin(user);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 
 		if(loginResult)
 		{
