@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,9 +26,10 @@ public class Account extends HttpServlet {
 		//DBに接続してアカウントテーブルに登録する
 		try {
 			RegisterAccountService.registerAccount(userName, password);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/createAccountSuccess.jsp");
+			dispatcher.forward(request, response);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
-
 }
